@@ -183,5 +183,5 @@ neg_labels = torch.tensor([1 for i in range(len(neg_prob))])
 labels = torch.cat((pos_labels, neg_labels))
 
 # Calculate and print AUROC score
-print(auroc(probs, labels))
+print("AUROC:", float(auroc(probs, labels)))
 
